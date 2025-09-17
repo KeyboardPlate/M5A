@@ -1,0 +1,246 @@
+{
+    "__mpe_config_进入归宿": {
+        "__mpe_code": {
+            "prefix": "",
+            "filename": "进入归宿",
+            "version": "v0.5.3"
+        }
+    },
+    "退出系统公告": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "系统公告"
+                ],
+                "roi": [
+                    137,
+                    55,
+                    203,
+                    134
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    15,
+                    13,
+                    69,
+                    71
+                ]
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 580,
+                "y": 0
+            }
+        },
+        "next": [
+            "进入归宿"
+        ]
+    },
+    "点击屏幕进入游戏": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "点击屏幕进入游戏"
+                ],
+                "roi": [
+                    500,
+                    525,
+                    280,
+                    130
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 580,
+                "y": 248
+            }
+        },
+        "next": [
+            "进入归宿"
+        ]
+    },
+    "退出活动": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "主打"
+                ],
+                "roi": [
+                    17,
+                    130,
+                    157,
+                    130
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    28,
+                    27,
+                    52,
+                    55
+                ]
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 580,
+                "y": 714
+            }
+        },
+        "next": [
+            "进入归宿"
+        ]
+    },
+    "归宿": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "辑大"
+                ],
+                "roi": [
+                    1126,
+                    364,
+                    148,
+                    127
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 580,
+                "y": 1180
+            }
+        }
+    },
+    "退出空军": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "空军"
+                ],
+                "roi": [
+                    919,
+                    133,
+                    231,
+                    178
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    26,
+                    16,
+                    62,
+                    66
+                ]
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 580,
+                "y": 466
+            }
+        },
+        "next": [
+            "进入归宿"
+        ]
+    },
+    "进入归宿": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 290,
+                "y": 625
+            }
+        },
+        "next": [
+            "退出系统公告",
+            "点击屏幕进入游戏",
+            "退出空军",
+            "退出活动",
+            "退出歌声",
+            "归宿"
+        ]
+    },
+    "start": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.netease.dwrg"
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 610
+            }
+        },
+        "next": [
+            "进入归宿"
+        ]
+    },
+    "退出歌声": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "稍后查看"
+                ],
+                "roi": [
+                    366,
+                    343,
+                    231,
+                    138
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 580,
+                "y": 962
+            }
+        },
+        "next": [
+            "进入归宿"
+        ]
+    }
+}

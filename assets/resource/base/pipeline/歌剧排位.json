@@ -1,0 +1,779 @@
+{
+    "__mpe_config_歌剧排位": {
+        "__mpe_code": {
+            "prefix": "",
+            "filename": "歌剧排位",
+            "version": "v0.5.3"
+        }
+    },
+    "归宿1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "辑大"
+                ],
+                "roi": [
+                    1126,
+                    364,
+                    148,
+                    127
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1450,
+                "y": 243
+            }
+        },
+        "next": [
+            "退出歌声1",
+            "领取奖励",
+            "确认",
+            "模式选择"
+        ]
+    },
+    "退出歌声1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "稍后查看"
+                ],
+                "roi": [
+                    366,
+                    343,
+                    231,
+                    138
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1740,
+                "y": 0
+            }
+        },
+        "next": [
+            "归宿1"
+        ]
+    },
+    "模式选择": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "辑大"
+                ],
+                "roi": [
+                    1080,
+                    364,
+                    145,
+                    127
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1107,
+                    483,
+                    99,
+                    54
+                ]
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1740,
+                "y": 218
+            }
+        },
+        "next": [
+            "排位"
+        ]
+    },
+    "排位": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "传统排位赛开启中"
+                ],
+                "roi": [
+                    386,
+                    163,
+                    280,
+                    134
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2030,
+                "y": 233
+            }
+        },
+        "next": [
+            "传统排位"
+        ]
+    },
+    "监管者": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "监管者"
+                ],
+                "roi": [
+                    860,
+                    74,
+                    186,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2610,
+                "y": 233
+            }
+        },
+        "next": [
+            "开始案件还原"
+        ]
+    },
+    "传统排位": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "传统排位"
+                ],
+                "roi": [
+                    290,
+                    272,
+                    171,
+                    48
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2320,
+                "y": 233
+            }
+        },
+        "next": [
+            "监管者"
+        ]
+    },
+    "开始案件还原": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "开始案件还原"
+                ],
+                "roi": [
+                    511,
+                    589,
+                    272,
+                    131
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2900,
+                "y": 233
+            }
+        },
+        "next": [
+            "准备案件还原",
+            "匹配"
+        ]
+    },
+    "准备案件还原": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "准备案件还原"
+                ],
+                "roi": [
+                    514,
+                    523,
+                    248,
+                    141
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 3190,
+                "y": 293
+            }
+        },
+        "next": [
+            "准备开始",
+            "匹配"
+        ]
+    },
+    "继续": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "继续"
+                ],
+                "roi": [
+                    553,
+                    595,
+                    175,
+                    125
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "rate_limit": 50,
+        "__mpe_code": {
+            "position": {
+                "x": 870,
+                "y": 822
+            }
+        },
+        "next": [
+            "返回大厅",
+            "继续"
+        ]
+    },
+    "返回大厅": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "返回大厅"
+                ],
+                "roi": [
+                    531,
+                    595,
+                    224,
+                    125
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1160,
+                "y": 837
+            }
+        },
+        "next": [
+            "归宿1",
+            "确认"
+        ]
+    },
+    "暗影之跃": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "暗影之跃.png"
+                ],
+                "green_mask": true,
+                "roi": [
+                    1032,
+                    410,
+                    120,
+                    111
+                ],
+                "threshold": [
+                    0.6
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "rate_limit": 10,
+        "__mpe_code": {
+            "position": {
+                "x": 1160,
+                "y": 415
+            }
+        },
+        "next": [
+            "影之回溯",
+            "影袭",
+            "庄园"
+        ]
+    },
+    "影之回溯": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "影之回溯.png"
+                ],
+                "green_mask": true,
+                "roi": [
+                    1152,
+                    386,
+                    117,
+                    113
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "rate_limit": 10,
+        "__mpe_code": {
+            "position": {
+                "x": 1450,
+                "y": 730
+            }
+        },
+        "next": [
+            "暗影之跃",
+            "影袭",
+            "庄园"
+        ]
+    },
+    "影袭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "影袭.png"
+                ],
+                "green_mask": true,
+                "roi": [
+                    828,
+                    491,
+                    127,
+                    105
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "rate_limit": 10,
+        "__mpe_code": {
+            "position": {
+                "x": 870,
+                "y": 504
+            }
+        },
+        "next": [
+            "暗影之跃",
+            "影之回溯",
+            "庄园"
+        ]
+    },
+    "庄园": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 580,
+                "y": 929
+            }
+        },
+        "next": [
+            "影袭",
+            "暗影之跃",
+            "影之回溯",
+            "得分已达最高",
+            "继续"
+        ]
+    },
+    "匹配": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "取消匹配"
+                ],
+                "roi": [
+                    73,
+                    302,
+                    193,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 3480,
+                "y": 184
+            }
+        },
+        "next": [
+            "准备案件还原",
+            "匹配"
+        ]
+    },
+    "准备开始": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "准备开始"
+                ],
+                "roi": [
+                    953,
+                    580,
+                    224,
+                    138
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 1000,
+        "__mpe_code": {
+            "position": {
+                "x": 3480,
+                "y": 1023
+            }
+        },
+        "next": [
+            "取消准备",
+            "庄园"
+        ]
+    },
+    "得分已达最高": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "得分已达最高"
+                ],
+                "roi": [
+                    48,
+                    398,
+                    250,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    10,
+                    10,
+                    28,
+                    28
+                ]
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 978
+            }
+        },
+        "next": [
+            "倒计时",
+            "投降"
+        ]
+    },
+    "投降": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "投降"
+                ],
+                "roi": [
+                    1019,
+                    519,
+                    182,
+                    141
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 290,
+                "y": 1291
+            }
+        },
+        "next": [
+            "确定"
+        ]
+    },
+    "确定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ],
+                "roi": [
+                    701,
+                    346,
+                    182,
+                    134
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 580,
+                "y": 1291
+            }
+        },
+        "next": [
+            "继续"
+        ]
+    },
+    "取消准备": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "取消准备"
+                ],
+                "roi": [
+                    953,
+                    580,
+                    224,
+                    138
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 3770,
+                "y": 1105
+            }
+        },
+        "next": [
+            "取消准备",
+            "庄园"
+        ]
+    },
+    "倒计时": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "秒"
+                ],
+                "roi": [
+                    1019,
+                    519,
+                    182,
+                    141
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    15,
+                    13,
+                    69,
+                    71
+                ]
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 290,
+                "y": 817
+            }
+        },
+        "next": [
+            "庄园"
+        ]
+    },
+    "领取奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "领取奖励"
+                ],
+                "roi": [
+                    536,
+                    527,
+                    212,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1740,
+                "y": 466
+            }
+        },
+        "next": [
+            "确认记录"
+        ]
+    },
+    "确认记录": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确认记录"
+                ],
+                "roi": [
+                    539,
+                    575,
+                    205,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2030,
+                "y": 876
+            }
+        },
+        "next": [
+            "返回",
+            "归宿1"
+        ]
+    },
+    "返回": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "返回"
+                ],
+                "roi": [
+                    400,
+                    522,
+                    170,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2320,
+                "y": 992
+            }
+        },
+        "next": [
+            "归宿1"
+        ]
+    },
+    "确认": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确认"
+                ],
+                "roi": [
+                    394,
+                    572,
+                    175,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1740,
+                "y": 1021
+            }
+        },
+        "next": [
+            "归宿1",
+            "确认记录"
+        ]
+    }
+}
