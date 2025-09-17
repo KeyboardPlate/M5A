@@ -30,11 +30,11 @@
     "task": [
         {
             "name": "进入归宿",
-            "entry": "进入归宿"
+            "entry": "start"
         },
         {
             "name": "歌剧排位",
-            "entry": "歌剧排位",
+            "entry": "归宿1"
         }
     ]
 }
