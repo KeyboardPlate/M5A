@@ -6,6 +6,83 @@
             "version": "v0.5.3"
         }
     },
+    "start": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.netease.dwrg"
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 858
+            }
+        },
+        "next": [
+            "进入归宿"
+        ]
+    },
+    "进入归宿": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 290,
+                "y": 873
+            }
+        },
+        "next": [
+            "加载",
+            "退出系统公告",
+            "点击屏幕进入游戏",
+            "退出空军",
+            "退出活动",
+            "退出歌声",
+            "老友回归",
+            "归宿"
+        ]
+    },
+    "加载": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "游戏版本"
+                ],
+                "roi": [
+                    0,
+                    606,
+                    176,
+                    114
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 580,
+                "y": 0
+            }
+        },
+        "next": [
+            "加载",
+            "进入归宿"
+        ]
+    },
     "退出系统公告": {
         "recognition": {
             "type": "OCR",
@@ -35,7 +112,7 @@
         "__mpe_code": {
             "position": {
                 "x": 580,
-                "y": 0
+                "y": 248
             }
         },
         "next": [
@@ -64,7 +141,7 @@
         "__mpe_code": {
             "position": {
                 "x": 580,
-                "y": 248
+                "y": 496
             }
         },
         "next": [
@@ -100,38 +177,12 @@
         "__mpe_code": {
             "position": {
                 "x": 580,
-                "y": 714
+                "y": 962
             }
         },
         "next": [
             "进入归宿"
         ]
-    },
-    "归宿": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "辑大"
-                ],
-                "roi": [
-                    1126,
-                    364,
-                    148,
-                    127
-                ]
-            }
-        },
-        "action": {
-            "type": "DoNothing",
-            "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 580,
-                "y": 1180
-            }
-        }
     },
     "退出空军": {
         "recognition": {
@@ -162,52 +213,7 @@
         "__mpe_code": {
             "position": {
                 "x": 580,
-                "y": 466
-            }
-        },
-        "next": [
-            "进入归宿"
-        ]
-    },
-    "进入归宿": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "DoNothing",
-            "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 625
-            }
-        },
-        "next": [
-            "退出系统公告",
-            "点击屏幕进入游戏",
-            "退出空军",
-            "退出活动",
-            "退出歌声",
-            "归宿"
-        ]
-    },
-    "start": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "StartApp",
-            "param": {
-                "package": "com.netease.dwrg"
-            }
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 610
+                "y": 714
             }
         },
         "next": [
@@ -236,11 +242,73 @@
         "__mpe_code": {
             "position": {
                 "x": 580,
-                "y": 962
+                "y": 1210
             }
         },
         "next": [
             "进入归宿"
         ]
+    },
+    "老友回归": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "稍后查看"
+                ],
+                "roi": [
+                    14,
+                    0,
+                    227,
+                    145
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    9,
+                    16,
+                    58,
+                    55
+                ]
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 580,
+                "y": 1428
+            }
+        },
+        "next": [
+            "进入归宿"
+        ]
+    },
+    "归宿": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "辑大"
+                ],
+                "roi": [
+                    1126,
+                    364,
+                    148,
+                    127
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 580,
+                "y": 1676
+            }
+        }
     }
 }
