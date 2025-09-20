@@ -31,7 +31,9 @@
             "领取奖励",
             "确认",
             "确认记录",
-            "返回"
+            "返回",
+            "稍后聆听",
+            "确定"
         ]
     },
     "退出歌声1": {
@@ -449,6 +451,7 @@
             "type": "DoNothing",
             "param": {}
         },
+        "post_delay": 3000,
         "__mpe_code": {
             "position": {
                 "x": 870,
@@ -479,7 +482,8 @@
             "type": "Click",
             "param": {}
         },
-        "post_delay": 1000,
+        "post_delay": 5000,
+        "pre_delay": 1000,
         "__mpe_code": {
             "position": {
                 "x": 870,
@@ -554,10 +558,10 @@
             }
         },
         "next": [
-            "确定"
+            "确定投降"
         ]
     },
-    "确定": {
+    "确定投降": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -820,7 +824,7 @@
             }
         },
         "action": {
-            "type": "Click",
+            "type": "DoNothing",
             "param": {}
         },
         "__mpe_code": {
@@ -830,7 +834,67 @@
             }
         },
         "next": [
+            "取消准备",
             "庄园"
+        ]
+    },
+    "确定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ],
+                "roi": [
+                    701,
+                    346,
+                    182,
+                    134
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 298,
+                "y": 2353
+            }
+        },
+        "next": [
+            "歌剧排位"
+        ]
+    },
+    "稍后聆听": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "稍后聆听"
+                ],
+                "roi": [
+                    341,
+                    527,
+                    221,
+                    158
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 299,
+                "y": 2173
+            }
+        },
+        "next": [
+            "确定",
+            "歌剧排位"
         ]
     }
 }
