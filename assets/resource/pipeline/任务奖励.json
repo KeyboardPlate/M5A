@@ -1,0 +1,414 @@
+{
+    "__mpe_config_任务奖励": {
+        "__mpe_code": {
+            "prefix": "",
+            "filename": "任务奖励",
+            "version": "v0.5.3"
+        }
+    },
+    "任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "任务.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 200,
+                "y": 100
+            }
+        },
+        "next": [
+            "登录分享"
+        ]
+    },
+    "登录分享": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "登录分享"
+                ],
+                "roi": [
+                    0,
+                    520,
+                    213,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 460,
+                "y": 100
+            }
+        },
+        "next": [
+            "点击领取"
+        ]
+    },
+    "点击领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "点击领取"
+                ],
+                "roi": [
+                    216,
+                    313,
+                    580,
+                    266
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 720,
+                "y": 100
+            }
+        },
+        "next": [
+            "确认登录记录"
+        ]
+    },
+    "点击分享": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "点击分享"
+                ],
+                "roi": [
+                    894,
+                    506,
+                    258,
+                    199
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1313,
+                "y": 110
+            }
+        },
+        "next": [
+            "分享"
+        ]
+    },
+    "确认登录记录": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确认记录"
+                ],
+                "roi": [
+                    532,
+                    568,
+                    223,
+                    145
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1037,
+                "y": 94
+            }
+        },
+        "next": [
+            "点击领取",
+            "点击分享"
+        ]
+    },
+    "分享": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "分享"
+                ],
+                "roi": [
+                    0,
+                    623,
+                    148,
+                    97
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    39,
+                    632,
+                    45,
+                    27
+                ]
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1573,
+                "y": 110
+            }
+        },
+        "next": [
+            "小红书"
+        ]
+    },
+    "小红书": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "小红书"
+                ],
+                "roi": [
+                    563,
+                    633,
+                    171,
+                    87
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1833,
+                "y": 110
+            }
+        },
+        "next": [
+            "返回游戏"
+        ]
+    },
+    "返回游戏": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.netease.dwrg"
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2152,
+                "y": 141
+            }
+        },
+        "next": [
+            "关闭小红书"
+        ]
+    },
+    "关闭小红书": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StopApp",
+            "param": {
+                "package": "com.xiaohongshu.android"
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2412,
+                "y": 141
+            }
+        },
+        "next": [
+            "完成分享"
+        ]
+    },
+    "完成分享": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "分享"
+                ],
+                "roi": [
+                    0,
+                    623,
+                    148,
+                    97
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    39,
+                    27,
+                    48,
+                    54
+                ]
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2669,
+                "y": 117
+            }
+        },
+        "next": [
+            "前往领取",
+            "完成分享"
+        ]
+    },
+    "前往领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "前往领取"
+                ],
+                "roi": [
+                    894,
+                    506,
+                    258,
+                    199
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2978,
+                "y": 102
+            }
+        },
+        "next": [
+            "一键领取邮件"
+        ]
+    },
+    "一键领取邮件": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "一键领取"
+                ],
+                "roi": [
+                    393,
+                    516,
+                    220,
+                    141
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 3238,
+                "y": 102
+            }
+        },
+        "next": [
+            "确认邮件记录"
+        ]
+    },
+    "确认邮件记录": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确认记录"
+                ],
+                "roi": [
+                    532,
+                    568,
+                    223,
+                    145
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 3530,
+                "y": 144
+            }
+        },
+        "next": [
+            "一键已读"
+        ]
+    },
+    "一键已读": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "一键已读"
+                ],
+                "roi": [
+                    393,
+                    516,
+                    220,
+                    141
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    26,
+                    13,
+                    45,
+                    61
+                ]
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 3825,
+                "y": 137
+            }
+        }
+    }
+}

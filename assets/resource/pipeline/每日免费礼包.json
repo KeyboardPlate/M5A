@@ -1,8 +1,8 @@
 {
-    "__mpe_config_领取奖励": {
+    "__mpe_config_每日免费礼包": {
         "__mpe_code": {
             "prefix": "",
-            "filename": "领取奖励",
+            "filename": "每日免费礼包",
             "version": "v0.5.3"
         }
     },
@@ -28,106 +28,112 @@
         },
         "__mpe_code": {
             "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "协会": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "协会.png"
-                ],
-                "green_mask": true,
-                "roi": [
-                    907,
-                    22,
-                    54,
-                    53
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 218
+                "x": 100,
+                "y": 50
             }
         },
         "next": [
-            "签到"
+            "推荐"
         ]
     },
-    "档案": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "档案.png"
-                ],
-                "green_mask": true,
-                "roi": [
-                    996,
-                    23,
-                    51,
-                    51
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 436
-            }
-        }
-    },
-    "邮件": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "邮件.png"
-                ],
-                "green_mask": true,
-                "roi": [
-                    1061,
-                    7,
-                    37,
-                    31
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 654
-            }
-        }
-    },
-    "签到": {
+    "推荐": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": [
-                    "签到"
+                    "推荐"
                 ],
                 "roi": [
-                    556,
-                    160,
+                    35,
+                    153,
+                    178,
+                    140
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 360,
+                "y": 50
+            }
+        },
+        "next": [
+            "特惠"
+        ]
+    },
+    "特惠": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "特惠"
+                ],
+                "roi": [
+                    346,
+                    60,
                     171,
+                    141
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 50
+            }
+        },
+        "next": [
+            "免费"
+        ]
+    },
+    "免费": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "免费"
+                ],
+                "roi": [
+                    449,
+                    285,
+                    175,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 880,
+                "y": 50
+            }
+        },
+        "next": [
+            "领取"
+        ]
+    },
+    "领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "领取"
+                ],
+                "roi": [
+                    546,
+                    527,
+                    186,
                     145
                 ]
             }
@@ -138,26 +144,55 @@
         },
         "__mpe_code": {
             "position": {
-                "x": 290,
-                "y": 218
+                "x": 1140,
+                "y": 50
             }
         },
         "next": [
-            "已签到"
+            "确认礼包记录"
         ]
     },
-    "已签到": {
+    "确认礼包记录": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": [
-                    "已签到"
+                    "确认记录"
                 ],
                 "roi": [
-                    556,
-                    160,
-                    171,
+                    532,
+                    568,
+                    223,
                     145
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1400,
+                "y": 50
+            }
+        },
+        "next": [
+            "已购买"
+        ]
+    },
+    "已购买": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "已购买"
+                ],
+                "roi": [
+                    452,
+                    288,
+                    175,
+                    133
                 ]
             }
         },
@@ -165,17 +200,17 @@
             "type": "Click",
             "param": {
                 "target": [
-                    12,
-                    14,
-                    67,
-                    64
+                    32,
+                    27,
+                    59,
+                    61
                 ]
             }
         },
         "__mpe_code": {
             "position": {
-                "x": 580,
-                "y": 203
+                "x": 1660,
+                "y": 50
             }
         }
     }
