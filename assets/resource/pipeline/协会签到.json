@@ -36,60 +36,6 @@
             "签到"
         ]
     },
-    "档案": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "档案.png"
-                ],
-                "green_mask": true,
-                "roi": [
-                    996,
-                    23,
-                    51,
-                    51
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 436
-            }
-        }
-    },
-    "邮件": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "邮件.png"
-                ],
-                "green_mask": true,
-                "roi": [
-                    1061,
-                    7,
-                    37,
-                    31
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 654
-            }
-        }
-    },
     "签到": {
         "recognition": {
             "type": "OCR",
@@ -116,7 +62,8 @@
             }
         },
         "next": [
-            "已签到"
+            "已签到",
+            "退出签到"
         ]
     },
     "已签到": {
@@ -147,8 +94,34 @@
         },
         "__mpe_code": {
             "position": {
-                "x": 580,
-                "y": 203
+                "x": 641,
+                "y": 199
+            }
+        },
+        "next": [
+            "退出签到"
+        ]
+    },
+    "退出签到": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    26,
+                    13,
+                    45,
+                    61
+                ]
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 991,
+                "y": 222
             }
         }
     }

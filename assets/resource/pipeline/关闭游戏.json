@@ -1,0 +1,27 @@
+{
+    "__mpe_config_关闭游戏": {
+        "__mpe_code": {
+            "prefix": "",
+            "filename": "关闭游戏",
+            "version": "v0.5.3"
+        }
+    },
+    "关闭游戏": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StopApp",
+            "param": {
+                "package": "com.netease.dwrg"
+            }
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 1075,
+                "y": 633
+            }
+        }
+    }
+}
