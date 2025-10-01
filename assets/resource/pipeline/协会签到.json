@@ -1,12 +1,5 @@
 {
-    "__mpe_config_协会签到": {
-        "__mpe_code": {
-            "prefix": "",
-            "filename": "协会签到",
-            "version": "v0.5.3"
-        }
-    },
-    "协会": {
+    "协会签到_协会": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -26,17 +19,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 218
-            }
-        },
         "next": [
-            "签到"
+            "协会签到_签到"
         ]
     },
-    "签到": {
+    "协会签到_签到": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -55,18 +42,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 218
-            }
-        },
         "next": [
-            "已签到",
-            "退出签到"
+            "协会签到_已签到"
         ]
     },
-    "已签到": {
+    "协会签到_已签到": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -85,44 +65,13 @@
             "type": "Click",
             "param": {
                 "target": [
-                    12,
-                    14,
-                    67,
-                    64
+                    30,
+                    20,
+                    40,
+                    55
                 ]
             }
         },
-        "__mpe_code": {
-            "position": {
-                "x": 641,
-                "y": 199
-            }
-        },
-        "next": [
-            "退出签到"
-        ]
-    },
-    "退出签到": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    26,
-                    13,
-                    45,
-                    61
-                ]
-            }
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 991,
-                "y": 222
-            }
-        }
+        "pre_delay": 2000
     }
 }

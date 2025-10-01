@@ -1,11 +1,4 @@
 {
-    "__mpe_config_歌剧排位": {
-        "__mpe_code": {
-            "prefix": "",
-            "filename": "歌剧排位",
-            "version": "v0.5.3"
-        }
-    },
     "歌剧排位": {
         "recognition": {
             "type": "DirectHit",
@@ -15,15 +8,9 @@
             "type": "DoNothing",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 600
-            }
-        },
         "next": [
             "退出歌声1",
-            "模式选择",
+            "排位模式选择",
             "排位",
             "传统排位",
             "监管者",
@@ -33,7 +20,8 @@
             "确认记录",
             "返回",
             "稍后聆听",
-            "确定"
+            "确定",
+            "大厅游戏模式"
         ]
     },
     "退出歌声1": {
@@ -55,17 +43,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 0
-            }
-        },
         "next": [
             "歌剧排位"
         ]
     },
-    "模式选择": {
+    "排位模式选择": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -91,12 +73,6 @@
                 ]
             }
         },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 218
-            }
-        },
         "next": [
             "歌剧排位"
         ]
@@ -119,12 +95,6 @@
         "action": {
             "type": "Click",
             "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 466
-            }
         },
         "next": [
             "歌剧排位"
@@ -149,12 +119,6 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 902
-            }
-        },
         "next": [
             "歌剧排位"
         ]
@@ -177,12 +141,6 @@
         "action": {
             "type": "Click",
             "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 684
-            }
         },
         "next": [
             "歌剧排位"
@@ -207,12 +165,6 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 2250
-            }
-        },
         "next": [
             "准备案件还原",
             "匹配"
@@ -236,12 +188,6 @@
         "action": {
             "type": "Click",
             "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 580,
-                "y": 2250
-            }
         },
         "next": [
             "准备开始",
@@ -268,12 +214,6 @@
             "param": {}
         },
         "rate_limit": 50,
-        "__mpe_code": {
-            "position": {
-                "x": 2900,
-                "y": 2886
-            }
-        },
         "next": [
             "返回大厅",
             "继续"
@@ -297,12 +237,6 @@
         "action": {
             "type": "Click",
             "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 3190,
-                "y": 2901
-            }
         }
     },
     "暗影之跃": {
@@ -329,12 +263,6 @@
             "param": {}
         },
         "rate_limit": 10,
-        "__mpe_code": {
-            "position": {
-                "x": 2320,
-                "y": 2302
-            }
-        },
         "next": [
             "影之回溯",
             "影袭",
@@ -362,12 +290,6 @@
             "param": {}
         },
         "rate_limit": 10,
-        "__mpe_code": {
-            "position": {
-                "x": 2610,
-                "y": 1875
-            }
-        },
         "next": [
             "暗影之跃",
             "影袭",
@@ -395,12 +317,6 @@
             "param": {}
         },
         "rate_limit": 10,
-        "__mpe_code": {
-            "position": {
-                "x": 2030,
-                "y": 2441
-            }
-        },
         "next": [
             "暗影之跃",
             "影之回溯",
@@ -416,20 +332,14 @@
             "type": "DoNothing",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 1740,
-                "y": 2496
-            }
-        },
         "next": [
             "影袭",
             "暗影之跃",
             "影之回溯",
             "得分已达最高",
             "继续",
-            "闪现",
-            "普通攻击"
+            "普通攻击",
+            "传送"
         ]
     },
     "匹配": {
@@ -452,12 +362,6 @@
             "param": {}
         },
         "post_delay": 3000,
-        "__mpe_code": {
-            "position": {
-                "x": 870,
-                "y": 2158
-            }
-        },
         "next": [
             "准备案件还原",
             "匹配"
@@ -484,12 +388,6 @@
         },
         "post_delay": 10000,
         "pre_delay": 1000,
-        "__mpe_code": {
-            "position": {
-                "x": 870,
-                "y": 2436
-            }
-        },
         "next": [
             "取消准备",
             "存在感"
@@ -521,12 +419,6 @@
                 ]
             }
         },
-        "__mpe_code": {
-            "position": {
-                "x": 2030,
-                "y": 2193
-            }
-        },
         "next": [
             "倒计时",
             "投降"
@@ -551,12 +443,6 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 2320,
-                "y": 2841
-            }
-        },
         "next": [
             "确定投降"
         ]
@@ -580,30 +466,18 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 2610,
-                "y": 2841
-            }
-        },
         "next": [
             "继续"
         ]
     },
-    "闪现": {
+    "传送": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "闪现.png"
+                    "传送.png"
                 ],
-                "green_mask": true,
-                "roi": [
-                    1174,
-                    294,
-                    54,
-                    62
-                ]
+                "green_mask": true
             }
         },
         "action": {
@@ -611,12 +485,6 @@
             "param": {}
         },
         "rate_limit": 10,
-        "__mpe_code": {
-            "position": {
-                "x": 2030,
-                "y": 1495
-            }
-        },
         "next": [
             "庄园"
         ]
@@ -645,14 +513,8 @@
             "param": {}
         },
         "rate_limit": 10,
-        "__mpe_code": {
-            "position": {
-                "x": 2030,
-                "y": 1773
-            }
-        },
         "next": [
-            "庄园"
+            "移动视角"
         ]
     },
     "倒计时": {
@@ -682,12 +544,6 @@
             }
         },
         "post_delay": 5000,
-        "__mpe_code": {
-            "position": {
-                "x": 2320,
-                "y": 1411
-            }
-        },
         "next": [
             "庄园"
         ]
@@ -710,12 +566,6 @@
         "action": {
             "type": "Click",
             "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 1140
-            }
         },
         "next": [
             "歌剧排位"
@@ -740,12 +590,6 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 1576
-            }
-        },
         "next": [
             "歌剧排位"
         ]
@@ -769,12 +613,6 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 1794
-            }
-        },
         "next": [
             "歌剧排位"
         ]
@@ -797,12 +635,6 @@
         "action": {
             "type": "Click",
             "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 1358
-            }
         },
         "next": [
             "歌剧排位"
@@ -828,12 +660,6 @@
             "param": {}
         },
         "post_delay": 10000,
-        "__mpe_code": {
-            "position": {
-                "x": 1160,
-                "y": 2369
-            }
-        },
         "next": [
             "取消准备",
             "存在感"
@@ -858,12 +684,6 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 580,
-                "y": 1517
-            }
-        },
         "next": [
             "歌剧排位"
         ]
@@ -886,12 +706,6 @@
         "action": {
             "type": "Click",
             "param": {}
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 2012
-            }
         },
         "next": [
             "确定",
@@ -918,14 +732,61 @@
             "param": {}
         },
         "timeout": 60000,
-        "__mpe_code": {
-            "position": {
-                "x": 1213,
-                "y": 2648
+        "next": [
+            "庄园"
+        ]
+    },
+    "移动视角": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    800,
+                    300,
+                    30,
+                    30
+                ],
+                "end": [
+                    [
+                        600,
+                        300,
+                        40,
+                        40
+                    ]
+                ]
             }
         },
         "next": [
+            "传送",
             "庄园"
+        ]
+    },
+    "大厅游戏模式": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "游戏.png"
+                ],
+                "roi": [
+                    1146,
+                    470,
+                    118,
+                    75
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "歌剧排位"
         ]
     }
 }

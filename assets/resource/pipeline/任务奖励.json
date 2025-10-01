@@ -1,12 +1,5 @@
 {
-    "__mpe_config_任务奖励": {
-        "__mpe_code": {
-            "prefix": "",
-            "filename": "任务奖励",
-            "version": "v0.5.3"
-        }
-    },
-    "任务": {
+    "任务奖励_任务": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -20,17 +13,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 60
-            }
-        },
         "next": [
-            "登录分享"
+            "任务奖励_登录分享"
         ]
     },
-    "登录分享": {
+    "任务奖励_登录分享": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -49,19 +36,13 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 290,
-                "y": 60
-            }
-        },
         "next": [
-            "点击领取",
-            "点击分享",
-            "前往领取"
+            "任务奖励_点击领取",
+            "任务奖励_点击分享",
+            "任务奖励_前往领取"
         ]
     },
-    "点击领取": {
+    "任务奖励_点击领取": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -80,17 +61,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 591,
-                "y": -360
-            }
-        },
         "next": [
-            "确认登录记录"
+            "任务奖励_确认登录记录"
         ]
     },
-    "点击分享": {
+    "任务奖励_点击分享": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -109,17 +84,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 1149,
-                "y": 321
-            }
-        },
         "next": [
-            "分享"
+            "任务奖励_分享"
         ]
     },
-    "确认登录记录": {
+    "任务奖励_确认登录记录": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -138,18 +107,12 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 815,
-                "y": -217
-            }
-        },
         "next": [
-            "点击领取",
-            "点击分享"
+            "任务奖励_点击领取",
+            "任务奖励_点击分享"
         ]
     },
-    "分享": {
+    "任务奖励_分享": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -175,17 +138,11 @@
                 ]
             }
         },
-        "__mpe_code": {
-            "position": {
-                "x": 1450,
-                "y": 45
-            }
-        },
         "next": [
-            "小红书"
+            "任务奖励_小红书"
         ]
     },
-    "小红书": {
+    "任务奖励_小红书": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -204,39 +161,11 @@
             "type": "Click",
             "param": {}
         },
-        "post_delay": 1000,
-        "__mpe_code": {
-            "position": {
-                "x": 1740,
-                "y": 60
-            }
-        },
         "next": [
-            "关闭小红书"
+            "任务奖励_关闭小红书"
         ]
     },
-    "返回游戏": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "StartApp",
-            "param": {
-                "package": "com.netease.dwrg"
-            }
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 2320,
-                "y": 75
-            }
-        },
-        "next": [
-            "完成分享"
-        ]
-    },
-    "关闭小红书": {
+    "任务奖励_关闭小红书": {
         "recognition": {
             "type": "DirectHit",
             "param": {}
@@ -247,17 +176,13 @@
                 "package": "com.xingin.xhs"
             }
         },
-        "__mpe_code": {
-            "position": {
-                "x": 2030,
-                "y": 75
-            }
-        },
+        "pre_delay": 1000,
+        "post_delay": 1000,
         "next": [
-            "返回游戏"
+            "任务奖励_完成分享"
         ]
     },
-    "完成分享": {
+    "任务奖励_完成分享": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -266,9 +191,9 @@
                 ],
                 "roi": [
                     0,
-                    623,
-                    148,
-                    97
+                    655,
+                    200,
+                    120
                 ]
             }
         },
@@ -283,18 +208,13 @@
                 ]
             }
         },
-        "__mpe_code": {
-            "position": {
-                "x": 2610,
-                "y": 45
-            }
-        },
+        "post_delay": 1000,
         "next": [
-            "前往领取",
-            "完成分享"
+            "任务奖励_完成分享",
+            "任务奖励_前往领取"
         ]
     },
-    "前往领取": {
+    "任务奖励_前往领取": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -313,17 +233,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 2900,
-                "y": 60
-            }
-        },
         "next": [
-            "一键领取邮件"
+            "任务奖励_一键领取邮件"
         ]
     },
-    "一键领取邮件": {
+    "任务奖励_一键领取邮件": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -342,17 +256,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 3190,
-                "y": 60
-            }
-        },
         "next": [
-            "确认邮件记录"
+            "任务奖励_确认邮件记录"
         ]
     },
-    "确认邮件记录": {
+    "任务奖励_确认邮件记录": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -371,17 +279,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 3480,
-                "y": 60
-            }
-        },
         "next": [
-            "一键已读"
+            "任务奖励_一键已读"
         ]
     },
-    "一键已读": {
+    "任务奖励_一键已读": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -407,17 +309,11 @@
                 ]
             }
         },
-        "__mpe_code": {
-            "position": {
-                "x": 3770,
-                "y": 45
-            }
-        },
         "next": [
-            "对战统计"
+            "任务奖励_对战统计"
         ]
     },
-    "对战统计": {
+    "任务奖励_对战统计": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -436,18 +332,13 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 4030,
-                "y": 45
-            }
-        },
+        "post_delay": 1000,
         "next": [
-            "一键领取",
-            "退出任务"
+            "任务奖励_一键领取",
+            "任务奖励_退出任务"
         ]
     },
-    "一键领取": {
+    "任务奖励_一键领取": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -466,17 +357,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 4290,
-                "y": 45
-            }
-        },
         "next": [
-            "确认对战记录"
+            "任务奖励_确认对战记录"
         ]
     },
-    "确认对战记录": {
+    "任务奖励_确认对战记录": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -495,17 +380,12 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 4624,
-                "y": 42
-            }
-        },
+        "post_delay": 1000,
         "next": [
-            "退出任务"
+            "任务奖励_退出任务"
         ]
     },
-    "退出任务": {
+    "任务奖励_退出任务": {
         "recognition": {
             "type": "DirectHit",
             "param": {}
@@ -514,17 +394,11 @@
             "type": "Click",
             "param": {
                 "target": [
-                    26,
-                    13,
-                    45,
-                    61
+                    36,
+                    22,
+                    34,
+                    45
                 ]
-            }
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 4884,
-                "y": 42
             }
         }
     }

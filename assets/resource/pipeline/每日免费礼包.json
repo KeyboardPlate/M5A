@@ -1,12 +1,5 @@
 {
-    "__mpe_config_每日免费礼包": {
-        "__mpe_code": {
-            "prefix": "",
-            "filename": "每日免费礼包",
-            "version": "v0.5.3"
-        }
-    },
-    "商城": {
+    "每日免费礼包_商城": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -26,17 +19,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 100,
-                "y": 50
-            }
-        },
         "next": [
-            "推荐"
+            "每日免费礼包_推荐"
         ]
     },
-    "推荐": {
+    "每日免费礼包_推荐": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -45,7 +32,7 @@
                 ],
                 "roi": [
                     35,
-                    153,
+                    77,
                     178,
                     140
                 ]
@@ -55,17 +42,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 360,
-                "y": 50
-            }
-        },
         "next": [
-            "特惠"
+            "每日免费礼包_特惠"
         ]
     },
-    "特惠": {
+    "每日免费礼包_特惠": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -84,17 +65,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 620,
-                "y": 50
-            }
-        },
         "next": [
-            "免费"
+            "每日免费礼包_免费"
         ]
     },
-    "免费": {
+    "每日免费礼包_免费": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -113,17 +88,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 880,
-                "y": 50
-            }
-        },
         "next": [
-            "领取"
+            "每日免费礼包_领取"
         ]
     },
-    "领取": {
+    "每日免费礼包_领取": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -142,17 +111,12 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 1140,
-                "y": 50
-            }
-        },
         "next": [
-            "确认礼包记录"
+            "每日免费礼包_确认记录",
+            "每日免费礼包_确认"
         ]
     },
-    "确认礼包记录": {
+    "每日免费礼包_确认记录": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -171,17 +135,11 @@
             "type": "Click",
             "param": {}
         },
-        "__mpe_code": {
-            "position": {
-                "x": 1400,
-                "y": 50
-            }
-        },
         "next": [
-            "已购买"
+            "每日免费礼包_已购买"
         ]
     },
-    "已购买": {
+    "每日免费礼包_已购买": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -206,12 +164,29 @@
                     61
                 ]
             }
-        },
-        "__mpe_code": {
-            "position": {
-                "x": 1660,
-                "y": 50
-            }
         }
+    },
+    "每日免费礼包_确认": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确认"
+                ],
+                "roi": [
+                    388,
+                    572,
+                    182,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "每日免费礼包_已购买"
+        ]
     }
 }
