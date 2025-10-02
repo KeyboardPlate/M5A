@@ -185,7 +185,6 @@
             "type": "Click",
             "param": {}
         },
-        "post_delay": 10000,
         "pre_delay": 1000,
         "next": [
             "黑杰克_取消准备",
@@ -211,7 +210,8 @@
             "type": "DoNothing",
             "param": {}
         },
-        "post_delay": 60000,
+        "timeout": 90000,
+        "post_delay": 5000,
         "next": [
             "黑杰克_取消准备",
             "黑杰克_总点数"
@@ -299,9 +299,9 @@
             "黑杰克_交互",
             "黑杰克_再抽一张",
             "黑杰克_确定",
-            "黑杰克_继续",
             "黑杰克_破译密码",
-            "黑杰克_旋转视角"
+            "黑杰克_旋转视角",
+            "黑杰克_结算"
         ]
     },
     "黑杰克_再抽一张": {
@@ -470,7 +470,8 @@
         "rate_limit": 100,
         "post_delay": 5000,
         "next": [
-            "黑杰克_庄园"
+            "黑杰克_怜悯修机",
+            "黑杰克_前行"
         ]
     },
     "黑杰克_传送": {
@@ -527,27 +528,22 @@
             "黑杰克_庄园"
         ]
     },
-    "黑杰克_继续": {
+    "黑杰克_点赞": {
         "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": [
-                    "继续"
-                ],
-                "roi": [
-                    563,
-                    595,
-                    161,
-                    125
-                ]
-            }
+            "type": "DirectHit",
+            "param": {}
         },
         "action": {
-            "type": "Click",
+            "type": "DoNothing",
             "param": {}
         },
         "next": [
-            "黑杰克_返回大厅"
+            "黑杰克_点赞1",
+            "黑杰克_点赞2",
+            "黑杰克_点赞3",
+            "黑杰克_点赞4",
+            "黑杰克_点赞5",
+            "黑杰克_继续_副本3"
         ]
     },
     "黑杰克_返回大厅": {
@@ -619,6 +615,225 @@
         },
         "next": [
             "黑杰克_庄园"
+        ]
+    },
+    "黑杰克_怜悯修机": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "修机.png"
+                ],
+                "green_mask": true,
+                "roi": [
+                    433,
+                    135,
+                    529,
+                    454
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "rate_limit": 100,
+        "next": [
+            "黑杰克_庄园"
+        ]
+    },
+    "黑杰克_前行": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    150,
+                    600,
+                    50,
+                    50
+                ],
+                "end": [
+                    [
+                        150,
+                        500,
+                        50,
+                        50
+                    ]
+                ]
+            }
+        },
+        "next": [
+            "黑杰克_庄园"
+        ]
+    },
+    "黑杰克_继续_副本3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "继续"
+                ],
+                "roi": [
+                    563,
+                    595,
+                    161,
+                    125
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "黑杰克_返回大厅"
+        ]
+    },
+    "黑杰克_点赞1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "点赞1.png"
+                ],
+                "green_mask": true,
+                "roi": [
+                    142,
+                    469,
+                    1054,
+                    140
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "黑杰克_点赞"
+        ]
+    },
+    "黑杰克_点赞2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "点赞2.png"
+                ],
+                "green_mask": true,
+                "roi": [
+                    142,
+                    469,
+                    1054,
+                    140
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "黑杰克_点赞"
+        ]
+    },
+    "黑杰克_点赞3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "点赞3.png"
+                ],
+                "green_mask": true,
+                "roi": [
+                    142,
+                    469,
+                    1054,
+                    140
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "黑杰克_点赞"
+        ]
+    },
+    "黑杰克_点赞4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "点赞4.png"
+                ],
+                "green_mask": true,
+                "roi": [
+                    142,
+                    469,
+                    1054,
+                    140
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "黑杰克_点赞"
+        ]
+    },
+    "黑杰克_点赞5": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "点赞5.png"
+                ],
+                "green_mask": true,
+                "roi": [
+                    142,
+                    469,
+                    1054,
+                    140
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "黑杰克_点赞"
+        ]
+    },
+    "黑杰克_结算": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "继续"
+                ],
+                "roi": [
+                    563,
+                    595,
+                    161,
+                    125
+                ]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "next": [
+            "黑杰克_点赞"
         ]
     }
 }
