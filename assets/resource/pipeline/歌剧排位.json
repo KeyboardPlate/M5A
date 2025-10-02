@@ -659,7 +659,8 @@
             "type": "DoNothing",
             "param": {}
         },
-        "post_delay": 10000,
+        "post_delay": 5000,
+        "timeout": 90000,
         "next": [
             "取消准备",
             "存在感"
@@ -731,7 +732,6 @@
             "type": "DoNothing",
             "param": {}
         },
-        "timeout": 60000,
         "next": [
             "庄园"
         ]
